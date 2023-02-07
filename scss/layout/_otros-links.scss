@@ -1,0 +1,40 @@
+.main-links {
+  @include sectionSpacing(2rem, 3rem);
+  text-align: center;
+  font-family: $fontBelleza;
+  .formulario{
+    form {
+      @include flexBox(column,start,stretch,0.7rem,nowrap);
+      span{
+        display:block;
+        text-align: start;
+      }
+      input{
+        width: 100%;
+      }
+      .horario{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+      .boton{
+        background-color: $detailColor;
+        color: #ffff;
+        border: none;
+      }
+    }
+  }
+  #politicas{
+    @include sectionSpacing(4rem,0);
+    p{
+      padding-top: 2rem;
+    }
+  }
+  #preguntas{
+    @include sectionSpacing(4rem,0);
+    h4{
+      padding-top: 5rem;
+    }
+
+  }
+}
